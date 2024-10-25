@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: teal;
+        }
+        .container{
+            height: 500px;
+            width:400px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .input{
+            height: 70px;
+            width:350px;
+            border: 2px solid rgba(240, 46, 170, 0.4);
+            margin: auto;
+            margin-top: 5px;
+            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 0px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        }
+        .btn{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,100px);
+            margin-top: 20px;
+            
+        }
+        .btn>div{
+            border: 2px solid rgba(240, 46, 170, 0.4);
+            margin-left: 15px;
+            height: 50px;
+            width: 50px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            text-align: center;
+            padding:10px;
+            font-size: 30px;
+            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+        }
+        .btn>div:nth-child(4){
+            background-color: rgb(243, 124, 185);
+            color: white;
+        }
+        .btn>div:nth-child(8){
+            background-color: rgb(243, 124, 185);
+            color: white;
+        }
+        .btn>div:nth-child(12){
+            background-color: rgb(243, 124, 185);
+            color: white;
+        }
+        .btn>div:nth-child(13){
+            background-color: rgb(184, 2, 96);
+            color: white;
+        }
+        .btn>div:nth-child(15){
+            background-color: rgb(243, 124, 185);
+            color: white;
+        }
+        .btn>div:nth-child(16){
+            background-color: rgb(243, 124, 185);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div class="container">
+        <div class="input">
+        </div>
+        <div class="btn">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>*</div>
+                <div>C</div>
+                <div>0</div>
+                <div>=</div>
+                <div>/</div>
+        </div>
+       
+    </div>
+</body>
+</html>
