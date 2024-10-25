@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 520px;
+            width: 800px;
+            margin: auto;
+        }
+        #box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,160px);
+            gap: 20px;
+        }
+        #box > div {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+        h1 {
+            text-align: center;
+            color: #f84364;
+            margin-bottom: 80px;
+        }
+        img{
+            height: 160px;
+            width:160px;
+        }
+        button{
+            background-color: red;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 40px;
+            width: 120px;
+            border: none;
+        }
+
+        
+        @media  (min-width: 425px) and (max-width: 780px) {
+            #box{
+                grid-template-columns: repeat(2 ,1fr);
+                grid-template-rows: repeat(6,190px);
+               
+            }
+            
+            img{
+                border-radius: 50%;
+            }
+        }
+
+        @media  (min-width: 70px) and (max-width: 420px) {
+            #box{
+                grid-template-columns: repeat(1 ,1fr);
+                grid-template-rows: repeat(6,160px);
+               
+            }
+            img{
+                border-radius: 50%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Just Movies</h1>
+    <div id="container">
+        <div id="box">
+            <div>
+                <div>
+                    <img src="https://th.bing.com/th?id=OIP.IBr1MfqJxe71NsHApFmKHQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>Munjya</h2>
+                    <h5>Releasing on 11 mar, 2024</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                         <img src="m1.jpg" >       </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>Gangubai</h2>
+                    <h5>Releasing on 10 nov, 2023</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="m1.jpg" >                </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>Shaandar</h2>
+                    <h5>Releasing on 9 oct, 2019</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="m1.jpg" >                </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>Avtar</h2>
+                    <h5>Releasing on 2 jan, 2010</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://th.bing.com/th?id=OIP.IBr1MfqJxe71NsHApFmKHQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >                </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>3 Idiots</h2>
+                    <h5>Releasing on 1 mar, 2009</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="m1.jpg" >                </div>
+                <div style="margin-left: 10px;line-height: 15px;">
+                    <h2>Bahubali</h2>
+                    <h5>Releasing on 20 feb, 2017</h5>
+                    <button>Book tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
