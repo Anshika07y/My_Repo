@@ -1,0 +1,125 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4ff; /* Soft lavender background */
+    color: #2a2a2a; /* Dark gray text for readability */
+}
+
+#container {
+    border: 1px solid #c7c7e2;
+    height: auto;
+    width: 90%; /* Set to 90% for smaller screens */
+    max-width: 500px; /* Limits to 500px on larger screens */
+    margin: 30px auto;
+    background-color: #7d5fff; /* Vivid purple container */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.4) 0px 10px 15px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #5a3bff; /* Darker purple for contrast */
+    padding: 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #d1d3ff; /* Soft blue text for subtle contrast */
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+#guess {
+    height: 35px;
+    width: 220px;
+    border: 2px solid #bdb4ff;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 16px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#button {
+    margin-top: 30px;
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffeb3b; /* Bright yellow button for contrast */
+    color: #2a2a2a;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
+}
+
+#guesses {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+#guesses p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff; 
+}
+
+#previousG,
+#remainingG {
+    font-weight: bold;
+    color: #ffeb3b; /* Bright yellow for visibility */
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #guess {
+        width: 100%;
+    }
+
+    #button {
+        width: 100%;
+    }
+
+    #guesses {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
