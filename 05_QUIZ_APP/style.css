@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f1012;
+  color: #2f2c2c;
+  padding: 20px;
+}
+
+/* Container for the whole app */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #545050;
+  border-radius: 10px;
+  
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #e9edf2;
+  margin-bottom: 20px;
+}
+
+/* Question Text */
+#question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Choices List */
+#choices-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#choices-list li {
+  background-color: #ecf0f1;
+  border: 2px solid transparent;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#choices-list li.active {
+  background-color: #ffd0e3;
+  border-color: #f510da;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Result Container */
+#result-container p#score {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+#choices-list li.active {
+  background-color: #ffd0e3;
+  border-color: #f510da;
+}
+
+#choices-list li.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+#choices-list li.wrong {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+#choices-list li {
+  cursor: pointer;
+}

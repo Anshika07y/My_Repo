@@ -1,0 +1,100 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9; /* Light green background for body */
+  color: #2e7d32; /* Dark green text for body */
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff; /* White background for container */
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid #388e3c; /* Dark green border */
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #388e3c; /* Dark green for h1 */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #388e3c; /* Dark green for h2 */
+}
+
+h3 {
+  color: #388e3c; /* Dark green for total */
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* For smaller screens */
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #66bb6a; /* Light green border for inputs */
+  border-radius: 4px;
+  flex: 1;
+  min-width: 100px;
+  background-color: #c8e6c9; /* Light green background for inputs */
+  color: #2e7d32; /* Dark green text color */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #43a047; /* Medium green for submit button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green for hover effect */
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  background-color: #c8e6c9; /* Light green for expense items */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #e53935; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
+
+#total {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
